@@ -1,0 +1,17 @@
+<h1>This is the Benford test</h1>
+
+<a href="{% url 'home' %}">Start Again</a>
+
+<h1>Benford Profile:</h1>
+
+{% for k, v in numdict %}
+{{k}}: {{v}}} <br/>
+
+{% endfor %}
+<br/>
+{% for num in benford %}
+{{num}} <br/>
+
+{% endfor %}
+
+<br/>
